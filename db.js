@@ -2,9 +2,9 @@
 const Pool = require('pg').Pool;
 
 const pool = new Pool({
-  user: 'hoby',
-  password: 'sergyoubi',
-  host: 'localhost',
+  user: '',
+  password: '',
+  host: '',
   port: 5432,
   database: 'blog'
 });
