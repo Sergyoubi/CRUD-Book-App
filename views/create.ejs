@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> <%=title%> </title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <a class="navbar-brand" href="/">AppTestPG</a>
+
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">  <a class="nav-link" href="/about">About</a>  </li>
+          
+        <li class="nav-item">   <a class="nav-link" href="/data">Data</a>   </li>
+
+        <li class="nav-item">  <a class="nav-link" href="/books">Books</a>  </li>
+          
+      </ul>
+
+    </nav>
+
+  </div>
+
+
+
+  <h1>Add another Book</h1>
+
+  <form action="/create/" method="POST"> 
+
+    <div class="title">
+
+      <label class="" for="title">Title</label>
+      <div class="">
+        <input type="text" class="" name="title" value="" />
+      </div>
+  
+    </div>
+    
+  
+    <div class="author">
+  
+      <label class="" for="author">Author</label>
+      <div class="">
+        <input type="text" class="" name="author" value="" />
+      </div>
+  
+    </div>
+    
+  
+    <div class="comment">
+  
+      <label class="" for="comment">Comment</label>
+      <div class="">
+        <textarea class="" cols="30" name="comment" maxlength="40000" rows="8">  </textarea>
+      </div>
+  
+    </div>
+  
+ 
+    <div class="button">
+
+      <input type="submit" value="Save" />
+      <a class="" href="/books">Cancel</a>
+
+    </div>
+
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> <%=title%> </title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <a class="navbar-brand" href="/">AppTestPG</a>
+
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">  <a class="nav-link" href="/about">About</a>  </li>
+          
+        <li class="nav-item">   <a class="nav-link" href="/data">Data</a>   </li>
+
+        <li class="nav-item">  <a class="nav-link" href="/books">Books</a>  </li>
+          
+      </ul>
+
+    </nav>
+
+  </div>
+
+  <h1>Delete a Book</h1>
+
+  <form action="/delete/<%= model.book_id %>" method="POST">
+
+    <div class="title">
+
+      <label class="" for="title">Title</label>
+      <div class="">
+        <input readonly class="" name="title" value="<%= model.title %>" />
+      </div>
+  
+    </div>
+    
+  
+    <div class="author">
+  
+      <label class="" for="author">Author</label>
+      <div class="">
+        <input readonly class="" name="author" value="<%= model.author %>" />
+      </div>
+  
+    </div>
+    
+  
+    <div class="comment">
+  
+      <label  for="comment">Comment</label>
+
+      <div class="">
+        <textarea readonly cols="30" name="comment" maxlength="40000" rows="8"> <%= model.comment %> </textarea>
+      </div>
+  
+    </div>
+  
+ 
+    <div class="button">
+
+      <input type="submit" value="Delete?" />
+      <a class="" href="/books">Cancel</a>
+
+    </div>
+
+  </form>
+
+</body>
+</html>
