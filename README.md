@@ -1,2 +1,2 @@
 # CRUD-Book-App
-CRUD Application made with HTML, express.js and PostgreSQL
+CRUD Application made with HTML, express.js, PostgreSQL and Passport.js
