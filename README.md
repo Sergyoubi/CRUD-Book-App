@@ -1,7 +1,6 @@
 # CRUD  Application
-This Application is made with HTML5, TailwindCSS, Express.js, PostgreSQL
+This Application is made with HTML5, TailwindCSS, Express.js, PostgreSQL!! Add your database config variables in db.js
 
-Add your database config variables in db.js
                                                       Landing Page
 ![Screen Shot 2021-06-24 at 23 42 56](https://user-images.githubusercontent.com/75132670/123330083-3b0bfb00-d546-11eb-9c7d-111168d2c55c.png)
                                              -------------------------------
